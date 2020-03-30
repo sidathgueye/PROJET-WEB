@@ -30,6 +30,7 @@ class Quiz extends Component {
     loadQuestions = level => {
         const fetchedArrayQuiz = QuestionHistoire[0].quizz[level]
         if (fetchedArrayQuiz.length >= this.state.maxQuestions) {
+
             this.storedDataRef.current = fetchedArrayQuiz;
 
             const newArray = fetchedArrayQuiz.map(({ answer, ...keepRest }) => keepRest);
@@ -130,11 +131,23 @@ class Quiz extends Component {
         }))
 
     }
-
+    getPercentage = (maxQuest, ourScore) => (ourScore / maxQuest) * 100;
     gameOver = () => {
-        this.setState({
-            quizEnd: true
-        })
+        const gradepercent = this.getPercentage(this.state.maxQuestions, this.state.score);
+
+        if (gradepercent >= 50) {
+            this.setState({
+                quizlevel: this.state.quizlevel + 1,
+                percent: gradepercent,
+                quizEnd: true
+            })
+        } else {
+            this.setState({
+                percent: gradepercent,
+                quizEnd: true
+            })
+        }
+
     }
     render() {
         // const { pseudo } = this.props.userData;
@@ -148,12 +161,22 @@ class Quiz extends Component {
         })
 
         return this.state.quizEnd ? (
-            <QuizOver />
+            <QuizOver
+                ref={this.storedDataRef}
+                levelNames={this.state.levelNames}
+                score={this.state.score}
+                maxQuestions={this.state.maxQuestions}
+                quizlevel={this.state.quizlevel}
+                percent={this.state.percent}
+            />
         ) : (
 
                 <Fragment>
                     <Niveau />
-                    <Progression />
+                    <Progression
+                        idQuestion={this.state.idQuestion}
+                        maxQuestions={this.state.maxQuestions}
+                    />
                     <h2>{this.state.question}</h2>
                     {displayOptions}
                     <button
@@ -161,12 +184,12 @@ class Quiz extends Component {
                         className="btnSubmit"
                         onClick={this.nextQuestion}
                     >
-                        Suivant
-                </button>
+                        {this.state.idQuestion < this.state.maxQuestions - 1 ? "Suivant" : "Terminer"}
+                    </button>
                 </Fragment>
             )
 
-        
+
 
     }
 }
