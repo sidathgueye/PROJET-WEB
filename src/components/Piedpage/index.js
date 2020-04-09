@@ -4,9 +4,9 @@ const Piedpage = ()=> {
     return (
         <footer>
             <div className="footer-container">
-                <p> Projet Developpement Web L3 Info </p>
-                <p>Réalisé Par GUEYE SIDATH @2020</p>
-                <p> Professeur: M. BENOIT FAVRE</p>
+                <p>Projet Developpement Web L3 Info </p>
+                <p>Réalisé Par GUEYE SIDATH </p>
+                <p>Professeur:  M. BENOIT FAVRE</p>
 
             </div>
         </footer>

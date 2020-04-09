@@ -15,7 +15,7 @@ export const QuestionHistoire = [
 
                     ],
                     answer: "En septembre 1939",
-                    heroId: 1009362
+           
                 },
                 {
                     id: 1,
@@ -27,7 +27,7 @@ export const QuestionHistoire = [
 
                     ],
                     answer: "Chine 2019",
-                    heroId: 1009718
+                  
                 },
                 {
                     id: 2,
@@ -39,7 +39,7 @@ export const QuestionHistoire = [
 
                     ],
                     answer: "Winston Churchill",
-                    heroId: 1009610
+                    
                 },
                 {
                     id: 3,
@@ -51,7 +51,7 @@ export const QuestionHistoire = [
 
                     ],
                     answer: "Le pacte de non-agression conclu avec Staline",
-                    heroId: 1009718
+                    
                 },
                 {
                     id: 4,
@@ -63,7 +63,7 @@ export const QuestionHistoire = [
 
                     ],
                     answer: "6 juin 1944",
-                    heroId: 1009664
+                  
                 },
             ],
             "intermédiaire":[
@@ -77,7 +77,7 @@ export const QuestionHistoire = [
                     
                     ],
                     answer: "En 1960",
-                    heroId: 1009718
+                    
                 },
                 {
                     id: 1,
@@ -89,7 +89,7 @@ export const QuestionHistoire = [
                       
                     ],
                     answer: "Lamine GUEYE",
-                    heroId: 1009466
+                   
                 },
                 {
                     id: 2,
@@ -101,7 +101,7 @@ export const QuestionHistoire = [
                     
                     ],
                     answer: "Blaise DIAGNE",
-                    heroId: 1009368
+                  
                 },
                 {
                     id: 3,
@@ -113,7 +113,7 @@ export const QuestionHistoire = [
                        
                     ],
                     answer: "Saint Louis",
-                    heroId: 1014985
+                   
                 },
                 {
                     id: 4,
@@ -125,7 +125,7 @@ export const QuestionHistoire = [
                        
                     ],
                     answer: "Mamadou DIA",
-                    heroId: 1009318
+               
                 },
             
             ],
@@ -141,7 +141,7 @@ export const QuestionHistoire = [
                         
                     ],
                     answer: "Louis-Napoléon BONAPARTE",
-                    heroId: 1009608
+                    
                 },
                 {
                     id: 1,
@@ -153,7 +153,7 @@ export const QuestionHistoire = [
                     
                     ],
                     answer: "L'Allemagne, l'Italie et le Japon",
-                    heroId: 1009626
+                   
                 },
                 {
                     id: 2,
@@ -165,7 +165,7 @@ export const QuestionHistoire = [
                 
                     ],
                     answer: "Entre 50 et 60 millions",
-                    heroId: 1009610
+                    
                 },
                 {
                     id: 3,
@@ -177,7 +177,7 @@ export const QuestionHistoire = [
                 
                     ],
                     answer: "Japon",
-                    heroId: 1009288
+                    
                 },
                 {
                     id: 4,
@@ -189,7 +189,7 @@ export const QuestionHistoire = [
                     
                     ],
                     answer: "Par le maréchal Pétain",
-                    heroId: 1009421
+                    
                 }
             ]
         }
